@@ -129,3 +129,15 @@ Fortsätt nu till [docs/lab-guide.md](docs/lab-guide.md) och genomför milstolpa
 - Om port `5001` används av ett annat program: stoppa programmet eller starta med en annan port. PowerShell: `$env:API_PORT=5002; docker compose up --build`. macOS/Linux: `API_PORT=5002 docker compose up --build`.
 - Visa status med `docker compose ps` och loggar med `docker compose logs api db redis simulator`.
 - Om en kodändring inte syns, kontrollera att du har kört `docker compose up --build -d` efter ändringen.
+
+## SQL Queries
+
+The project includes the three mandatory SQL queries required by the assignment:
+
+1. Total number of measurements using `COUNT`
+2. Average temperature using `AVG`
+3. Measurements from the last 24 hours
+
+The queries are available in:
+
+[`docs/sql-queries.sql`](docs/sql-queries.sql)
